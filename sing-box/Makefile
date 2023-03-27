@@ -65,18 +65,18 @@ define Package/$(PKG_NAME)/config
 
     config SING_BOX_WITH_ECH
       bool "Build with TLS ECH extension support"
-      default n
+      default y
 
     config SING_BOX_WITH_GRPC
       bool "Build with standard gRPC support"
-      default n
+      default y
       help
       sing-box has better performance gun-lite gRPC built-in by default.
       This standard gRPC has better compatibility but poor performance.
 
     config SING_BOX_WITH_GVISOR
       bool "Build with gVisor support"
-      default n
+      default y
 
     config SING_BOX_WITH_QUIC
       bool "Build with QUIC support"
@@ -91,7 +91,7 @@ define Package/$(PKG_NAME)/config
 
     config SING_BOX_WITH_SHADOWSOCKSR
       bool "Build with ShadowsockR support"
-      default n
+      default y
 
     config SING_BOX_WITH_UTLS
       bool "Build with uTLS support"
@@ -99,7 +99,7 @@ define Package/$(PKG_NAME)/config
 
     config SING_BOX_WITH_V2RAY_API
       bool "Build with V2Ray API support (EXPERIMENTAL!!!)"
-      default n
+      default y
 
     config SING_BOX_WITH_WIREGUARD
       bool "Build with WireGuard support"
